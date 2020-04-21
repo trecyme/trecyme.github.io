@@ -1,0 +1,33 @@
+---
+title: __yh__的博客
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+  
+  <body>
+    <header>
+      <div class="inner">
+        <a>
+          <h1>__yh__的博客</h1>
+        </a>
+        <h2></h2>
+        
+        
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+	    {% for post in site.posts %}
+	    <ul>
+			<a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
+        <ul>
+		{% endfor %}
+        <aside id="sidebar">
+        </aside>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
